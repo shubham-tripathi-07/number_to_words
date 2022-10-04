@@ -19,6 +19,7 @@ def writetofile(a,b):
     external_file.close()
     
 def commandhandler(number):
+    number_in_words = ""
     if number <= 100 : number_in_words = lessthan100(number)
     elif number <= 1000 : number_in_words = lessthan1000(number)
     elif number <= 10000 : number_in_words = lessthan10000(number)
@@ -87,7 +88,8 @@ def upto100000(num):
 # USE getinwords(YOUR_NUMBER) to get value in words
 # USE writetofile(START,END) to get values between your START and END to printed to the file output.txt
 
-
+header()
+getinwords()
 
 
     
